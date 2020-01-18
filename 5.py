@@ -8,5 +8,6 @@ x=len(line)
 for i in range(x):
   print line[i]  
 
+print line[1][4]
 f5.close()
 
