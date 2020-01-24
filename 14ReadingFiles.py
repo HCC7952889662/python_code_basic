@@ -8,7 +8,7 @@ with open('a.txt') as f:
 
 print(array)
 
-with open('maze.txt') as f:
+with open('mazenospace.txt') as f:
 #w, h = [int(x) for x in next(f).split()] # read first line
     maze = []
     for line in f: # read rest of lines

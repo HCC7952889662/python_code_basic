@@ -36,6 +36,7 @@ for i in detail_info['result']:
         for j in range(0,len(detail_info['result']['address_components'])):
             addr = detail_info['result']['address_components'][j]['long_name'] + addr
         print(str(addr))
+        place_addr = str(addr)
         f.write(str(addr)+"\n")
         addr = ""
         for day in range(0,6):
@@ -49,7 +50,7 @@ from google_speech import Speech
 
 # say "Hello World"
 lang = "en"
-speech = Speech(place_name, lang)
+speech = Speech(place_addr, lang)
 speech.play()
 #for python3
 
